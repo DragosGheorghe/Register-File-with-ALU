@@ -1,0 +1,84 @@
+# Reading pref.tcl
+# do tema4_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/qfiles/tema4 {D:/qfiles/tema4/regFileWithAlu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:57:10 on May 30,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/qfiles/tema4" D:/qfiles/tema4/regFileWithAlu.v 
+# -- Compiling module regFileWithAlu
+# 
+# Top level modules:
+# 	regFileWithAlu
+# End time: 14:57:10 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/qfiles/tema4 {D:/qfiles/tema4/alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:57:10 on May 30,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/qfiles/tema4" D:/qfiles/tema4/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 14:57:11 on May 30,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/qfiles/tema4 {D:/qfiles/tema4/mux2_32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:57:11 on May 30,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/qfiles/tema4" D:/qfiles/tema4/mux2_32.v 
+# -- Compiling module mux2_32
+# 
+# Top level modules:
+# 	mux2_32
+# End time: 14:57:11 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/qfiles/tema4 {D:/qfiles/tema4/regfile.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:57:11 on May 30,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/qfiles/tema4" D:/qfiles/tema4/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 14:57:11 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/qfiles/tema4 {D:/qfiles/tema4/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:57:11 on May 30,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/qfiles/tema4" D:/qfiles/tema4/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 14:57:11 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 14:57:11 on May 30,2021
+# Loading work.tb
+# Loading work.regFileWithAlu
+# Loading work.regfile
+# Loading work.mux2_32
+# Loading work.alu
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : D:/qfiles/tema4/tb.v(90)
+#    Time: 37 ps  Iteration: 0  Instance: /tb
+# Break in Module tb at D:/qfiles/tema4/tb.v line 90
+# End time: 14:58:17 on May 30,2021, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 0

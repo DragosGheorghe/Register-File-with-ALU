@@ -1,0 +1,23 @@
+module regFileWithALU
+      ( input  [31:0] dataIn   , // data input 
+        input  [2:0]  func     , // function code for ALU
+        input         crIn     , // carry input for arithmetic operations
+        input  [3:0]  leftAddr , // selects left operand (leftOp) from register file
+        input  [3:0]  rightAddr, // selects right operand (rightOp) from register file
+        input  [3:0]  destAddr , // selects destination of result in register file
+	input	       writeEn	 , // write enable in register file
+        input         selInput , // selects dataIn as leftOp
+        output [31:0] dataOut  , // data output: leftOp from register file
+        output        crOut    , // carry output from ALU
+        input         clock    );
+						
+	//...
+	
+	//ALU ...
+	
+	//regFile ...
+	
+	//mux2_32 ... // a two-input 32-bit multiplexor for leftOp
+
+endmodule
+

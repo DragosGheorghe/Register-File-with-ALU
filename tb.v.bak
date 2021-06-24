@@ -1,0 +1,36 @@
+module tb ();
+
+wire [31:0] s_dataOut;
+wire s_crOut;
+reg [31:0] s_dataIn;
+reg [2:0] s_func;
+reg s_crIn, s_writeEn, s_selInput, clock;
+reg [4:0] leftAddr, rightAddr, destAddr;
+
+regFileWithAlu (
+						.dataIn(s_dataIn),
+						.func(s_func),
+						.crIn(s_crIn),
+						.leftAddr(s_leftAddr),
+						.rightAddr(s_rightAddr),
+						.destAddr(s_destAddr),
+						.writeEn(s_writeEn),
+						.selInput(s_selInput),
+						.dataOut(s_dataOut),
+						.crOut(s_crOut),
+						.clock(s_clock)
+						);
+
+initial begin
+s_clock = 0;
+forever #2 s_clock = ~s_clock;
+end
+initial begin
+s_writeEn = 1;
+s_destAddr = 4;
+s_dataIn = 17;
+#3			
+						
+						
+						
+endmodule 
